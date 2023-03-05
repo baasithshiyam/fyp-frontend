@@ -1,11 +1,13 @@
 import React ,{useState , useEffect} from 'react';
+import AppBarView from './view/AppBarView';
+import ProductHeroView from './view/ProductHeroView';
 
 function App() {
 
   const [data, setdata] = useState([{}])
 
   useEffect(() => {
-    fetch("/members").then(
+    fetch("/welcome").then(
       res => res.json()
     ).then(
       data => {
@@ -17,12 +19,14 @@ function App() {
 
   return (
     <div>
+      < AppBarView />
+      < ProductHeroView />
       <h1>Welcome</h1>
-          {(typeof data.members === "undefined") ? (
+          {(typeof data.welcome === "undefined") ? (
             <p> Loading .....</p>
           ) : (
-            data.members.map((member , i) =>(
-              < p key={i}>{member}</p>
+            data.welcome.map((welcome , i) =>(
+              < p key={i}>{welcome}</p>
             ))
           )}
     </div>
