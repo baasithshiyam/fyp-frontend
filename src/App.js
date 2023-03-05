@@ -1,6 +1,10 @@
 import React ,{useState , useEffect} from 'react';
 import AppBarView from './view/AppBarView';
 import ProductHeroView from './view/ProductHeroView';
+import AboutView from './view/AboutView';
+import HowToUse from './view/HowToUse';
+import ContactUs from './view/ContactUs';
+import FooterView from './view/FooterView';
 
 function App() {
 
@@ -21,6 +25,10 @@ function App() {
     <div>
       < AppBarView />
       < ProductHeroView />
+      < AboutView />
+      < HowToUse />
+      < ContactUs />
+      < FooterView />
       <h1>Welcome</h1>
           {(typeof data.welcome === "undefined") ? (
             <p> Loading .....</p>

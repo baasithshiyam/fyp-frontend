@@ -6,10 +6,12 @@ import Box from '@mui/material/Box';
 
 
 const HomelayoutLayoutRoot = styled('section')(({ theme }) => ({
-    color: theme.palette.common.white,
+    color: '#ffff',
     position: 'relative',
     display: 'flex',
     alignItems: 'center',
+    paddingTop:35,
+    marginTop:-35,
     [theme.breakpoints.up('sm')]: {
       height: '80vh',
       minHeight: 500,
