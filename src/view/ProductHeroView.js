@@ -38,7 +38,7 @@ function ProductHeroView(props) {
           variant="contained"
           size="large"
           component="a"
-          href="#"
+          href="/demo"
           sx={{ minWidth: 200 }}
         >
           Try Demo

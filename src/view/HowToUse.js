@@ -110,7 +110,7 @@ function HowToUse(props) {
           size="large"
           variant="contained"
           component="a"
-          href="#"
+          href="/demo"
           sx={{ mt: 8 }}
         >
           Get started

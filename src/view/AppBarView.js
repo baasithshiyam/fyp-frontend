@@ -39,7 +39,7 @@ function AppBarView (props) {
             <Link
               variant="h6"
               underline="none"
-              href="#"
+              href="/demo"
               sx={{ ...rightLink, color: '#ffff' , fontWeight: 'bold' }}
             >
               {'Try Demo'}

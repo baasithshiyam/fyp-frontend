@@ -32,16 +32,16 @@ function Copyright() {
     },
   };
   
-  const LANGUAGES = [
-    {
-      code: 'en-US',
-      name: 'English',
-    },
-    {
-      code: 'fr-FR',
-      name: 'Français',
-    },
-  ];
+  // const LANGUAGES = [
+  //   {
+  //     code: 'en-US',
+  //     name: 'English',
+  //   },
+  //   {
+  //     code: 'fr-FR',
+  //     name: 'Français',
+  //   },
+  // ];
 
 function FooterView(props) {
     return (

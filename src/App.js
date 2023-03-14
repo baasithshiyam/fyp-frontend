@@ -1,10 +1,8 @@
 import React ,{useState , useEffect} from 'react';
-import AppBarView from './view/AppBarView';
-import ProductHeroView from './view/ProductHeroView';
-import AboutView from './view/AboutView';
-import HowToUse from './view/HowToUse';
-import ContactUs from './view/ContactUs';
-import FooterView from './view/FooterView';
+import Home from './pages/home';
+import Demo from './pages/demo';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
 
@@ -22,14 +20,16 @@ function App() {
     },[])
 
   return (
+    <Router>
     <div>
-      < AppBarView />
-      < ProductHeroView />
-      < AboutView />
-      < HowToUse />
-      < ContactUs />
-      < FooterView />
-      <h1>Welcome</h1>
+          <Routes>
+              <Route exact path='/' element={< Home />} />
+              <Route path='/demo' element={< Demo />} />
+              {/* <Route path='/about' element={Home} /> */}
+          </Routes>
+
+
+          <h1>Welcome</h1>
           {(typeof data.welcome === "undefined") ? (
             <p> Loading .....</p>
           ) : (
@@ -37,7 +37,10 @@ function App() {
               < p key={i}>{welcome}</p>
             ))
           )}
-    </div>
+
+     </div>
+    </ Router>
+    
   );
 }
 
