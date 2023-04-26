@@ -20,20 +20,22 @@ function ProductHeroView(props) {
           src={backgroundImage}
           alt="increase priority"
         />
-        <Typography color="inherit" align="center" variant="h2" marked="center">
+
+<h1 className='display-2 font-weight-bold text-center'>Detect deepfakes in Low Resource Images</h1>
+        {/* <Typography color="inherit" align="center" variant="h2" marked="center">
           Detect deepfake profile images 
-        </Typography>
+        </Typography> */}
         <Typography
           color="inherit"
           align="center"
-          variant="h5"
-          sx={{ mb: 4, mt: { xs: 4, sm: 10 } }}
+          variant="p"
+          sx={{ mb: 4, mt: { xs: 4, sm: 4 } }}
         >
             Deepfakes, which are AI-generated 
             synthetic media that can mimic the 
             appearance and actions of real people,
              have the potential to be used for malicious purposes such as misinformation, propaganda, and fraud, making them a serious threat to individuals and society as a whole.        </Typography>
-        <Button
+        {/* <Button
           color="secondary"
           variant="contained"
           size="large"
@@ -42,7 +44,9 @@ function ProductHeroView(props) {
           sx={{ minWidth: 200 }}
         >
           Try Demo
-        </Button>
+        </Button> */}
+        <a href='/demo' className=''><button className='btn btn-primary btn-lg font-weight-bold'>Get started
+                <i class="fa fa-external-link ml-2" ></i></button></a>
         <Typography variant="body2" color="inherit" sx={{ mt: 2 }}>
           With Explainable AI (XAI)
         </Typography>

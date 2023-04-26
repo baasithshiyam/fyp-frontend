@@ -17,15 +17,17 @@ function AppBarView (props) {
       <AppBar position="fixed" >
         <Toolbar sx={{ justifyContent: 'space-between' }}>
           <Box sx={{ flex: 1 }} />
-          <Link
+          {/* <Link
             variant="h6"
             underline="none"
-            color="#ae00ff"
-            href="#"
+            color="#fff"
+            href="/"
             sx={{ fontSize: 24 }}
           >
             {'DeepFake Detector'}
-          </Link>
+          </Link> */}
+
+          <a href='/' className='font-weight-bold text-decoration-none text-light h5'>Deepfake Detector</a>
           <Box sx={{ flex: 1, display: 'flex', justifyContent: 'flex-end' }}>
             <Link
               color="#ae00ff"

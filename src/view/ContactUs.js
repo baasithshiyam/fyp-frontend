@@ -27,31 +27,36 @@ function ContactUs(props) {
             sx={{
               display: 'flex',
               justifyContent: 'center',
-              bgcolor: '#e8d4fc',
-              py: 8,
+              // bgcolor: '#e8d4fc',
+              py: 3,
               px: 3,
             }}
           >
             <Box component="form" onSubmit={handleSubmit} sx={{ maxWidth: 400 }}>
-              <Typography variant="h2" component="h2" gutterBottom>
+              {/* <Typography variant="h2" component="h2" gutterBottom>
                 Contact The Developer 
-              </Typography>
-              <Typography variant="h5">
+              </Typography> */}
+
+              <h1 className='font-weight-bold mb-3'>Contact the developer</h1>
+              <p className='text-secondary'>Unmask the Truth: Stop Deepfakes with Our Detection Software</p>
+              {/* <Typography variant="h5">
               Unmask the Truth: Stop Deepfakes with Our Detection Software
-              </Typography>
+              </Typography> */}
               <TextField
                 label="Your email"
                 variant="filled"
-                sx={{ width: '100%', mt: 3, mb: 2 }}
+                sx={{ width: '100%', mt: 0, mb: 2 }}
               />
-              <Button
+              {/* <Button
                 type="submit"
                 color="primary"
-                variant="contained"
+                // variant="contained"
                 sx={{ width: '100%' }}
               >
                 feel free to contact
-              </Button>
+              </Button> */}
+
+              <button className='btn btn-primary font-weight-bold'>Say Hi !</button>
             </Box>
           </Box>
         </Grid>
@@ -74,7 +79,7 @@ function ContactUs(props) {
           />
           <Box
             component="img"
-            src="https://images.unsplash.com/photo-1587560699334-bea93391dcef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            src="https://plus.unsplash.com/premium_photo-1661371767935-aeeb44523816?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
             alt="call to action"
             sx={{
               position: 'absolute',

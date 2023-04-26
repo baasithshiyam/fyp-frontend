@@ -28,7 +28,7 @@ function App() {
               {/* <Route path='/about' element={Home} /> */}
           </Routes>
 
-
+{/* 
           <h1>Welcome</h1>
           {(typeof data.welcome === "undefined") ? (
             <p> Loading .....</p>
@@ -36,7 +36,7 @@ function App() {
             data.welcome.map((welcome , i) =>(
               < p key={i}>{welcome}</p>
             ))
-          )}
+          )} */}
 
      </div>
     </ Router>

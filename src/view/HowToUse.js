@@ -23,7 +23,7 @@ const item = {
   };
   
   const image = {
-    height: 55,
+    height: 100,
     my: 4,
   };
 
@@ -56,9 +56,10 @@ function HowToUse(props) {
             opacity: 0.7,
           }}
         />
-        <Typography variant="h4" marked="center" component="h2" sx={{ mb: 14 }}>
+        {/* <Typography variant="h4" marked="center" component="h2" sx={{ mb: 14 }}>
           How it works
-        </Typography>
+        </Typography> */}
+        <h1 className='font-weight-bold display-4'>How it works</h1>
         <div>
           <Grid container spacing={5}>
             <Grid item xs={12} md={4}>
@@ -70,7 +71,7 @@ function HowToUse(props) {
                   alt="upload"
                   sx={image}
                 />
-                <Typography variant="h5" align="center">
+                <Typography variant="h6" align="center">
                     Upload an Image
                 </Typography>
               </Box>
@@ -84,7 +85,7 @@ function HowToUse(props) {
                   alt="face detection"
                   sx={image}
                 />
-                <Typography variant="h5" align="center">
+                <Typography variant="h6" align="center">
                     Deepfake Detection
                 </Typography>
               </Box>
@@ -98,14 +99,14 @@ function HowToUse(props) {
                   alt="clock"
                   sx={image}
                 />
-                <Typography variant="h5" align="center">
-                  Deepfake Detection Report
+                <Typography variant="h6" align="center">
+                   Detection Report
                 </Typography>
               </Box>
             </Grid>
           </Grid>
         </div>
-        <Button
+        {/* <Button
           color="secondary"
           size="large"
           variant="contained"
@@ -114,7 +115,10 @@ function HowToUse(props) {
           sx={{ mt: 8 }}
         >
           Get started
-        </Button>
+        </Button> */}
+
+        <a href='/demo' className='mt-4'><button className='btn btn-primary btn-lg font-weight-bold'>Get started
+                <i class="fa fa-external-link ml-2" ></i></button></a>
       </Container>
     </Box>
         </div>

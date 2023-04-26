@@ -47,7 +47,7 @@ function FooterView(props) {
     return (
         <Typography
       component="footer"
-      sx={{ display: 'flex', bgcolor: '#f3e6ff' }}
+      sx={{ display: 'flex', bgcolor: '#000', color:'#fff' }}
     >
       <Container sx={{ my: 8, display: 'flex' }}>
         <Grid container spacing={5}>
