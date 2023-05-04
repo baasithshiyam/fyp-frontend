@@ -293,10 +293,8 @@ const Demo = () => {
         >
     
 
+    {isFacedetected && (
       <div className="container">
-
-
-
 
         <div className="  border-0 p-3">
           <h3 className="font-weight-bold mb-3">Generated Report</h3>
@@ -384,6 +382,7 @@ const Demo = () => {
       
 
       </div>
+    )}
       </LoadingOverlay>
 
     </div>
