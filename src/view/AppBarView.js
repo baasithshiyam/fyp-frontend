@@ -33,10 +33,10 @@ function AppBarView (props) {
               color="#ae00ff"
               variant="h6"
               underline="none"
-              href="#"
+              href="/help"
               sx={rightLink}
             >
-              {'About'}
+              {'Help'}
             </Link>
             <Link
               variant="h6"

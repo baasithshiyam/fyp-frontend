@@ -1,6 +1,7 @@
 import React ,{useState , useEffect} from 'react';
 import Home from './pages/home';
 import Demo from './pages/demo';
+import Help from './pages/help';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -25,7 +26,7 @@ function App() {
           <Routes>
               <Route exact path='/' element={< Home />} />
               <Route path='/demo' element={< Demo />} />
-              {/* <Route path='/about' element={Home} /> */}
+              <Route path='/help' element={<Help />} /> 
           </Routes>
 
 {/* 
