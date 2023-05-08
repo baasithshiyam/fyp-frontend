@@ -10,6 +10,7 @@ import "firebase/compat/storage";
 import LoadingOverlay from 'react-loading-overlay'
 import RingLoader from "react-spinners/RingLoader";
 import { bool } from "prop-types";
+import { color } from "@mui/system";
 
 
 
@@ -337,7 +338,9 @@ const Demo = () => {
 
               </div>
 
-              {isReal == "Fake" &&  
+              {isReal == "Fake" &&        
+              <>
+
                       <div className="row mt-3">
                         <div className="col-sm-6">
                           <div className="card">
@@ -370,7 +373,27 @@ const Demo = () => {
                           </div>
                         </div>
                       </div>
-                }
+                      <br/>
+                      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Click for More Information</button>
+                      <br/>
+                      <div class="row">
+                          <div class="col">
+                            <div class="collapse multi-collapse" id="multiCollapseExample1">
+                              <div class="card card-body">
+                               <span style={{color:"green"}}>Green </span>  color represents the positive impact of a feature on the prediction. This means that increasing the value of the feature will increase the likelihood of the model predicting a positive outcome.</div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="collapse multi-collapse" id="multiCollapseExample2">
+                              <div class="card card-body">
+                              <span style={{color:"red"}}>Red </span> color represents the negative impact of a feature on the prediction. This means that increasing the value of the feature will decrease the likelihood of the model predicting a positive outcome.                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                </>
+                      
+                } 
 
             </div>
 
