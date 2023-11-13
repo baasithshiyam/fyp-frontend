@@ -15,12 +15,12 @@ import { color } from "@mui/system";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyD9O3iIe10jYFzGx2Hv_3tQowNElwKzSnI",
+  apiKey: "",
   authDomain: "fyp-deepfake-bf912.firebaseapp.com",
   projectId: "fyp-deepfake-bf912",
   storageBucket: "fyp-deepfake-bf912.appspot.com",
-  messagingSenderId: "256382751728",
-  appId: "1:256382751728:web:32c6c01dd6c3b1686bc335",
+  messagingSenderId: "",
+  appId: "",
   measurementId: "G-5SL81RKR60",
   databaseURL: ""
 
